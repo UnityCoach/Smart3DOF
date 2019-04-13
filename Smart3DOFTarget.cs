@@ -31,7 +31,9 @@ using UnityEditor;
 /// Smart 3DOF Target.
 /// Sets a position constraint's source weight from a reference transform's forward and up vector match with the target.
 /// </summary>
+#if UNITY_EDITOR
 [CanEditMultipleObjects]
+#endif
 public class Smart3DOFTarget : MonoBehaviour
 {
 	[Tooltip("The transform reference.\nAuto configured with Rig.")]
